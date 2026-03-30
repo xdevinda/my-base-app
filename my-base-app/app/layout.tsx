@@ -10,6 +10,8 @@ export async function generateMetadata(): Promise<Metadata> {
     title: minikitConfig.miniapp.name,
     description: minikitConfig.miniapp.description,
     other: {
+      // This ID links your web app to the Base developer portal
+      "base:app_id": "69ca1b988e56248fea198f09", 
       "fc:miniapp": JSON.stringify({
         version: minikitConfig.miniapp.version,
         imageUrl: minikitConfig.miniapp.heroImageUrl,
